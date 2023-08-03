@@ -1,5 +1,6 @@
-# 使用 Windows Server Core 镜像作为基础镜像  
-FROM mcr.microsoft.com/windows/servercore:ltsc2019 
+```dockerfile
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
+
   
 # 安装 PowerShell 和远程桌面连接工具  
 RUNpowershell Add-AppxPackage -Path C:\windows\system32\Windows.UI.Xaml.dll.mui -Path C:\windows\system32\Windows.winmd  
